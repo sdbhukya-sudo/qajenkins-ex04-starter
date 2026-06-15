@@ -35,7 +35,7 @@ pipeline {
     always {
         recordIssues(
             qualityGates: [
-                [criticality: 'FAILURE', integerThreshold: 780, threshold: 10.0, type: 'TOTAL_HIGH'], 
+                [criticality: 'FAILURE', integerThreshold: 80, threshold: 80.0, type: 'TOTAL_HIGH'], 
                 [criticality: 'FAILURE', integerThreshold: 5, threshold: 5.0, type: 'NEW']
                 ], 
                 sourceCodeRetention: 'LAST_BUILD', 
