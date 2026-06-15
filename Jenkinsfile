@@ -8,7 +8,7 @@ pipeline {
     stage("Docker Build") {
       // steps {
       //   sh "echo 'Docker Build...'"
-      // }
+      // } 
        steps{
         script {
             dockerImage = docker.build(registry)
